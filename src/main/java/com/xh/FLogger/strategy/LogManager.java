@@ -24,7 +24,7 @@ public class LogManager extends Thread {
 //	private static LogFileItem logFileItem = null;
 	
 	public final static long WRITE_LOG_INV_TIME = CommUtil.getConfigByLong("WRITE_LOG_INV_TIME", 1000);
-	public final static long SINGLE_LOG_FILE_SIZE = CommUtil.getConfigByLong("SINGLE_LOG_FILE_SIZE", 10 * 1024 *1024);
+	public final static long SINGLE_LOG_FILE_SIZE = CommUtil.getConfigByLong("SINGLE_LOG_FILE_SIZE", 10 * 1024 * 1024);
 	public final static long SINGLE_LOG_CACHE_SIZE = CommUtil.getConfigByLong("SINGLE_LOG_CACHE_SIZE", 10 * 1024);
 	
 	private boolean bIsRun = true;
@@ -80,7 +80,7 @@ public class LogManager extends Thread {
 				flush(false);
 				// reload log level
 				if (i++ % 100 == 0) {
-					Constant.CFG_LOG_LEVEL = CommUtil.getConfigByString("LOG_LEVEL", "0,1,2,3,4");
+					Constant.CFG_LOG_LEVEL = CommUtil.getConfigByString("LOG_LEVEL", "2");
 					i = 1;
 				}
 			} catch (Exception e) {
