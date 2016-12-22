@@ -1,0 +1,10 @@
+zookeeper.address = 10.187.128.162:22288,10.187.125.117:22288,10.187.125.113:22288,10.187.128.163:22288,10.187.128.164:22288
+zookeeper.path = /bp/ustdatacollect
+
+dataSource = app/pc/wxsq
+topic = pv/click
+
+# instance number started on one machine
+instanceNum = 2
+# consumption partition number by each instance
+partitionPerInstance = 4
