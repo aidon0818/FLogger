@@ -71,13 +71,13 @@ public class FLogger {
 			logManager.addLog(logFileName, sb);
 			
 			// print error and fatal msg to terminal
-			if (logLevel == Constant.ERROR || logLevel == Constant.FATAL) {
-				try {
-					System.out.print(new String(sb.toString().getBytes(Constant.CFG_CHARSET_NAME), Constant.CFG_CHARSET_NAME));
-				} catch (Exception e) {
-					System.out.print(CommUtil.getExpStack(e));
-				}
-			}
+			//if (logLevel == Constant.ERROR || logLevel == Constant.FATAL) {
+			//	try {
+			//		System.out.print(new String(sb.toString().getBytes(Constant.CFG_CHARSET_NAME), Constant.CFG_CHARSET_NAME));
+			//	} catch (Exception e) {
+			//		System.out.print(CommUtil.getExpStack(e));
+			//	}
+			//}
 		}
 	}
 	

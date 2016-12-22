@@ -120,10 +120,8 @@ public class LogManager extends Thread {
 					lfi.currCacheSize = 0;
 				}
 				
-				// create log file
 				createLogFile(lfi);
 				
-				// print log
 				int iWriteSize = writeToFile(lfi.fullLogFileName, alWriteLog);
 				lfi.currLogSize += iWriteSize;
 			}
